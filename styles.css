@@ -162,6 +162,31 @@ nav {
     margin-bottom: 30px;
 }
 
+.hero-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--body-size);
+    color: var(--gray);
+}
+
+.benefit-item i {
+    color: var(--primary);
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.benefit-item span {
+    font-weight: 500;
+}
+
 .btn-group {
     display: flex;
     gap: 15px;
