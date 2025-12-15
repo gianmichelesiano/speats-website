@@ -72,6 +72,7 @@ const translations = {
       // Header
       'nav_home': 'Home',
       'nav_services': 'Services',
+      'nav_odoo_ai': 'Odoo AI',
       'nav_brokerai': 'BrokerAI',
       'nav_about': 'About',
       'nav_contact': 'Contact',
@@ -178,7 +179,54 @@ const translations = {
       'brokerai_benefit_productivity_description': 'Centralized dashboard with always accessible analysis history and optimized workflows.',
       'brokerai_benefit_service_title': 'Superior Customer Service',
       'brokerai_benefit_service_description': 'Detailed comparisons to present to clients with professional analysis and quick responses.',
-      
+
+      // Odoo AI Section
+      'odoo_ai_title': 'AI Product Description Generator for Odoo',
+      'odoo_ai_subtitle': 'Transform your product catalog in minutes with professional AI-generated descriptions. Save 97% of your time!',
+      'odoo_stat_time_saved': 'Time Saved',
+      'odoo_stat_generation_time': 'Generation Time',
+      'odoo_stat_price': 'One-Time Price',
+
+      // Odoo AI Features
+      'odoo_feature_oneclick_title': 'One-Click Generation',
+      'odoo_feature_oneclick_description': 'Open any product, click "Generate with AI", and get a professional description in 3 seconds. It\'s that simple.',
+      'odoo_feature_templates_title': '3 Smart Templates',
+      'odoo_feature_templates_description': 'Choose Brief (50 words), Standard (100 words), or Detailed (200 words). Perfect for any use case.',
+      'odoo_feature_edit_title': 'Edit Before Saving',
+      'odoo_feature_edit_description': 'Preview and modify the generated description before applying. Full control, zero waste.',
+      'odoo_feature_regenerate_title': 'Regenerate Anytime',
+      'odoo_feature_regenerate_description': 'Not happy? Click "Regenerate" for a fresh version. Different words, same quality.',
+      'odoo_feature_secure_title': 'Secure Configuration',
+      'odoo_feature_secure_description': 'Your OpenAI API key is stored encrypted. Test connection with one click.',
+      'odoo_feature_error_title': 'Smart Error Handling',
+      'odoo_feature_error_description': 'Clear error messages with troubleshooting steps. Never stuck, always supported.',
+
+      // Odoo AI Screenshots
+      'odoo_screenshots_title': 'See It in Action',
+      'odoo_screenshot_1_title': 'Generate with One Click',
+      'odoo_screenshot_1_description': 'Open any product and click "Generate AI Description". The wizard opens instantly.',
+      'odoo_screenshot_2_title': 'Smart Button in Product Form',
+      'odoo_screenshot_2_description': 'The "Generate AI Description" button is integrated directly in your product form.',
+      'odoo_screenshot_3_title': 'Easy Configuration',
+      'odoo_screenshot_3_description': 'Add your OpenAI API key, test the connection, and you\'re ready to go!',
+
+      // Odoo AI Benefits
+      'odoo_benefits_title': 'Why Choose Our Solution?',
+      'odoo_benefit_time_title': 'Save Hours of Work',
+      'odoo_benefit_time_description': '200 products = 30 minutes instead of 50 hours. Automatic comparisons and batch processing.',
+      'odoo_benefit_quality_title': 'Consistent Quality',
+      'odoo_benefit_quality_description': 'SEO-optimized descriptions with standardized format across all products.',
+      'odoo_benefit_cost_title': 'Minimal Costs',
+      'odoo_benefit_cost_description': '€29 one-time + ~€0.02 per description. 100 products ≈ €2 API cost.',
+      'odoo_benefit_unlimited_title': 'Unlimited Use',
+      'odoo_benefit_unlimited_description': 'Pay once, use forever. No subscriptions, no hidden fees. Lifetime updates included.',
+
+      // Odoo AI CTA
+      'odoo_cta_title': 'Ready to Transform Your Product Catalog?',
+      'odoo_cta_description': 'Join hundreds of Odoo users saving hours every week.',
+      'odoo_cta_button': 'Get It Now on Odoo Apps',
+      'odoo_cta_guarantee': '30-day money-back guarantee • Compatible: Odoo 17, 18, 19',
+
       // Footer
       'footer_company': 'Company',
       'footer_about_us': 'About Us',
@@ -198,6 +246,7 @@ const translations = {
       // Header
       'nav_home': 'Home',
       'nav_services': 'Servizi',
+      'nav_odoo_ai': 'Odoo AI',
       'nav_brokerai': 'BrokerAI',
       'nav_about': 'Chi Siamo',
       'nav_contact': 'Contatti',
@@ -304,7 +353,54 @@ const translations = {
       'brokerai_benefit_productivity_description': 'Dashboard centralizzata con storico delle analisi sempre accessibile e workflow ottimizzati.',
       'brokerai_benefit_service_title': 'Servizio Clienti Superiore',
       'brokerai_benefit_service_description': 'Confronti dettagliati da presentare ai clienti con analisi professionali e risposte rapide.',
-      
+
+      // Odoo AI Section
+      'odoo_ai_title': 'Generatore AI di Descrizioni Prodotti per Odoo',
+      'odoo_ai_subtitle': 'Trasforma il tuo catalogo prodotti in pochi minuti con descrizioni professionali generate dall\'AI. Risparmia il 97% del tempo!',
+      'odoo_stat_time_saved': 'Tempo Risparmiato',
+      'odoo_stat_generation_time': 'Tempo di Generazione',
+      'odoo_stat_price': 'Prezzo Una Tantum',
+
+      // Odoo AI Features
+      'odoo_feature_oneclick_title': 'Generazione con Un Click',
+      'odoo_feature_oneclick_description': 'Apri qualsiasi prodotto, clicca "Genera con AI", e ottieni una descrizione professionale in 3 secondi. È così semplice.',
+      'odoo_feature_templates_title': '3 Template Intelligenti',
+      'odoo_feature_templates_description': 'Scegli Breve (50 parole), Standard (100 parole), o Dettagliato (200 parole). Perfetto per ogni esigenza.',
+      'odoo_feature_edit_title': 'Modifica Prima di Salvare',
+      'odoo_feature_edit_description': 'Anteprima e modifica la descrizione generata prima di applicarla. Pieno controllo, zero sprechi.',
+      'odoo_feature_regenerate_title': 'Rigenera Quando Vuoi',
+      'odoo_feature_regenerate_description': 'Non soddisfatto? Clicca "Rigenera" per una nuova versione. Parole diverse, stessa qualità.',
+      'odoo_feature_secure_title': 'Configurazione Sicura',
+      'odoo_feature_secure_description': 'La tua API key OpenAI è memorizzata criptata. Testa la connessione con un click.',
+      'odoo_feature_error_title': 'Gestione Intelligente Errori',
+      'odoo_feature_error_description': 'Messaggi di errore chiari con passaggi di risoluzione. Mai bloccato, sempre supportato.',
+
+      // Odoo AI Screenshots
+      'odoo_screenshots_title': 'Guarda Come Funziona',
+      'odoo_screenshot_1_title': 'Genera con Un Click',
+      'odoo_screenshot_1_description': 'Apri qualsiasi prodotto e clicca "Genera Descrizione AI". Il wizard si apre istantaneamente.',
+      'odoo_screenshot_2_title': 'Pulsante Smart nel Form Prodotto',
+      'odoo_screenshot_2_description': 'Il pulsante "Genera Descrizione AI" è integrato direttamente nel form del prodotto.',
+      'odoo_screenshot_3_title': 'Configurazione Semplice',
+      'odoo_screenshot_3_description': 'Aggiungi la tua API key OpenAI, testa la connessione, e sei pronto!',
+
+      // Odoo AI Benefits
+      'odoo_benefits_title': 'Perché Scegliere la Nostra Soluzione?',
+      'odoo_benefit_time_title': 'Risparmia Ore di Lavoro',
+      'odoo_benefit_time_description': '200 prodotti = 30 minuti invece di 50 ore. Confronti automatici e elaborazione batch.',
+      'odoo_benefit_quality_title': 'Qualità Consistente',
+      'odoo_benefit_quality_description': 'Descrizioni ottimizzate SEO con formato standardizzato su tutti i prodotti.',
+      'odoo_benefit_cost_title': 'Costi Minimi',
+      'odoo_benefit_cost_description': '€29 una tantum + ~€0.02 per descrizione. 100 prodotti ≈ €2 costo API.',
+      'odoo_benefit_unlimited_title': 'Uso Illimitato',
+      'odoo_benefit_unlimited_description': 'Paghi una volta, usi per sempre. Nessun abbonamento, nessun costo nascosto. Aggiornamenti a vita inclusi.',
+
+      // Odoo AI CTA
+      'odoo_cta_title': 'Pronto a Trasformare il Tuo Catalogo Prodotti?',
+      'odoo_cta_description': 'Unisciti a centinaia di utenti Odoo che risparmiano ore ogni settimana.',
+      'odoo_cta_button': 'Ottienilo Ora su Odoo Apps',
+      'odoo_cta_guarantee': 'Garanzia rimborso 30 giorni • Compatibile: Odoo 17, 18, 19',
+
       // Footer
       'footer_company': 'Azienda',
       'footer_about_us': 'Chi Siamo',
@@ -324,6 +420,7 @@ const translations = {
       // Header
       'nav_home': 'Accueil',
       'nav_services': 'Services',
+      'nav_odoo_ai': 'Odoo IA',
       'nav_brokerai': 'BrokerAI',
       'nav_about': 'À Propos',
       'nav_contact': 'Contact',
@@ -430,7 +527,54 @@ const translations = {
       'brokerai_benefit_productivity_description': 'Tableau de bord centralisé avec historique des analyses toujours accessible et flux de travail optimisés.',
       'brokerai_benefit_service_title': 'Service Client Supérieur',
       'brokerai_benefit_service_description': 'Comparaisons détaillées à présenter aux clients avec analyses professionnelles et réponses rapides.',
-      
+
+      // Odoo AI Section
+      'odoo_ai_title': 'Générateur IA de Descriptions de Produits pour Odoo',
+      'odoo_ai_subtitle': 'Transformez votre catalogue de produits en quelques minutes avec des descriptions professionnelles générées par l\'IA. Économisez 97% de votre temps!',
+      'odoo_stat_time_saved': 'Temps Économisé',
+      'odoo_stat_generation_time': 'Temps de Génération',
+      'odoo_stat_price': 'Prix Unique',
+
+      // Odoo AI Features
+      'odoo_feature_oneclick_title': 'Génération en Un Clic',
+      'odoo_feature_oneclick_description': 'Ouvrez n\'importe quel produit, cliquez sur "Générer avec IA", et obtenez une description professionnelle en 3 secondes. C\'est aussi simple que ça.',
+      'odoo_feature_templates_title': '3 Modèles Intelligents',
+      'odoo_feature_templates_description': 'Choisissez Bref (50 mots), Standard (100 mots), ou Détaillé (200 mots). Parfait pour tous les cas d\'usage.',
+      'odoo_feature_edit_title': 'Modifier Avant d\'Enregistrer',
+      'odoo_feature_edit_description': 'Prévisualisez et modifiez la description générée avant de l\'appliquer. Contrôle total, zéro gaspillage.',
+      'odoo_feature_regenerate_title': 'Régénérer à Tout Moment',
+      'odoo_feature_regenerate_description': 'Pas satisfait? Cliquez sur "Régénérer" pour une nouvelle version. Mots différents, même qualité.',
+      'odoo_feature_secure_title': 'Configuration Sécurisée',
+      'odoo_feature_secure_description': 'Votre clé API OpenAI est stockée cryptée. Testez la connexion en un clic.',
+      'odoo_feature_error_title': 'Gestion Intelligente des Erreurs',
+      'odoo_feature_error_description': 'Messages d\'erreur clairs avec étapes de dépannage. Jamais bloqué, toujours supporté.',
+
+      // Odoo AI Screenshots
+      'odoo_screenshots_title': 'Voyez-le en Action',
+      'odoo_screenshot_1_title': 'Générer en Un Clic',
+      'odoo_screenshot_1_description': 'Ouvrez n\'importe quel produit et cliquez sur "Générer Description IA". L\'assistant s\'ouvre instantanément.',
+      'odoo_screenshot_2_title': 'Bouton Intelligent dans le Formulaire Produit',
+      'odoo_screenshot_2_description': 'Le bouton "Générer Description IA" est intégré directement dans votre formulaire produit.',
+      'odoo_screenshot_3_title': 'Configuration Facile',
+      'odoo_screenshot_3_description': 'Ajoutez votre clé API OpenAI, testez la connexion, et c\'est parti!',
+
+      // Odoo AI Benefits
+      'odoo_benefits_title': 'Pourquoi Choisir Notre Solution?',
+      'odoo_benefit_time_title': 'Économisez des Heures de Travail',
+      'odoo_benefit_time_description': '200 produits = 30 minutes au lieu de 50 heures. Comparaisons automatiques et traitement par lots.',
+      'odoo_benefit_quality_title': 'Qualité Constante',
+      'odoo_benefit_quality_description': 'Descriptions optimisées SEO avec format standardisé sur tous les produits.',
+      'odoo_benefit_cost_title': 'Coûts Minimaux',
+      'odoo_benefit_cost_description': '€29 paiement unique + ~€0.02 par description. 100 produits ≈ €2 coût API.',
+      'odoo_benefit_unlimited_title': 'Utilisation Illimitée',
+      'odoo_benefit_unlimited_description': 'Payez une fois, utilisez pour toujours. Pas d\'abonnement, pas de frais cachés. Mises à jour à vie incluses.',
+
+      // Odoo AI CTA
+      'odoo_cta_title': 'Prêt à Transformer Votre Catalogue de Produits?',
+      'odoo_cta_description': 'Rejoignez des centaines d\'utilisateurs Odoo qui économisent des heures chaque semaine.',
+      'odoo_cta_button': 'Obtenez-le Maintenant sur Odoo Apps',
+      'odoo_cta_guarantee': 'Garantie satisfait ou remboursé 30 jours • Compatible: Odoo 17, 18, 19',
+
       // Footer
       'footer_company': 'Entreprise',
       'footer_about_us': 'À Propos de Nous',
@@ -450,6 +594,7 @@ const translations = {
       // Header
       'nav_home': 'Startseite',
       'nav_services': 'Dienstleistungen',
+      'nav_odoo_ai': 'Odoo KI',
       'nav_brokerai': 'BrokerAI',
       'nav_about': 'Über Uns',
       'nav_contact': 'Kontakt',
@@ -556,7 +701,54 @@ const translations = {
       'brokerai_benefit_productivity_description': 'Zentralisiertes Dashboard mit immer zugänglicher Analysehistorie und optimierten Workflows.',
       'brokerai_benefit_service_title': 'Überlegener Kundenservice',
       'brokerai_benefit_service_description': 'Detaillierte Vergleiche zur Präsentation an Kunden mit professionellen Analysen und schnellen Antworten.',
-      
+
+      // Odoo AI Section
+      'odoo_ai_title': 'KI-Produktbeschreibungsgenerator für Odoo',
+      'odoo_ai_subtitle': 'Transformieren Sie Ihren Produktkatalog in Minuten mit professionellen KI-generierten Beschreibungen. Sparen Sie 97% Ihrer Zeit!',
+      'odoo_stat_time_saved': 'Zeit Gespart',
+      'odoo_stat_generation_time': 'Generierungszeit',
+      'odoo_stat_price': 'Einmalpreis',
+
+      // Odoo AI Features
+      'odoo_feature_oneclick_title': 'Ein-Klick-Generierung',
+      'odoo_feature_oneclick_description': 'Öffnen Sie ein beliebiges Produkt, klicken Sie auf "Mit KI Generieren", und erhalten Sie in 3 Sekunden eine professionelle Beschreibung. So einfach ist das.',
+      'odoo_feature_templates_title': '3 Intelligente Vorlagen',
+      'odoo_feature_templates_description': 'Wählen Sie Kurz (50 Wörter), Standard (100 Wörter) oder Detailliert (200 Wörter). Perfekt für jeden Anwendungsfall.',
+      'odoo_feature_edit_title': 'Vor dem Speichern Bearbeiten',
+      'odoo_feature_edit_description': 'Vorschau und Änderung der generierten Beschreibung vor der Anwendung. Volle Kontrolle, keine Verschwendung.',
+      'odoo_feature_regenerate_title': 'Jederzeit Neu Generieren',
+      'odoo_feature_regenerate_description': 'Nicht zufrieden? Klicken Sie auf "Neu Generieren" für eine neue Version. Andere Worte, gleiche Qualität.',
+      'odoo_feature_secure_title': 'Sichere Konfiguration',
+      'odoo_feature_secure_description': 'Ihr OpenAI API-Schlüssel wird verschlüsselt gespeichert. Testen Sie die Verbindung mit einem Klick.',
+      'odoo_feature_error_title': 'Intelligente Fehlerbehandlung',
+      'odoo_feature_error_description': 'Klare Fehlermeldungen mit Lösungsschritten. Nie festgefahren, immer unterstützt.',
+
+      // Odoo AI Screenshots
+      'odoo_screenshots_title': 'Sehen Sie es in Aktion',
+      'odoo_screenshot_1_title': 'Mit Einem Klick Generieren',
+      'odoo_screenshot_1_description': 'Öffnen Sie ein beliebiges Produkt und klicken Sie auf "KI-Beschreibung Generieren". Der Assistent öffnet sich sofort.',
+      'odoo_screenshot_2_title': 'Smart Button im Produktformular',
+      'odoo_screenshot_2_description': 'Der Button "KI-Beschreibung Generieren" ist direkt in Ihr Produktformular integriert.',
+      'odoo_screenshot_3_title': 'Einfache Konfiguration',
+      'odoo_screenshot_3_description': 'Fügen Sie Ihren OpenAI API-Schlüssel hinzu, testen Sie die Verbindung, und los geht\'s!',
+
+      // Odoo AI Benefits
+      'odoo_benefits_title': 'Warum Unsere Lösung Wählen?',
+      'odoo_benefit_time_title': 'Sparen Sie Stunden Arbeit',
+      'odoo_benefit_time_description': '200 Produkte = 30 Minuten statt 50 Stunden. Automatische Vergleiche und Batch-Verarbeitung.',
+      'odoo_benefit_quality_title': 'Konsistente Qualität',
+      'odoo_benefit_quality_description': 'SEO-optimierte Beschreibungen mit standardisiertem Format für alle Produkte.',
+      'odoo_benefit_cost_title': 'Minimale Kosten',
+      'odoo_benefit_cost_description': '€29 einmalig + ~€0.02 pro Beschreibung. 100 Produkte ≈ €2 API-Kosten.',
+      'odoo_benefit_unlimited_title': 'Unbegrenzte Nutzung',
+      'odoo_benefit_unlimited_description': 'Einmal zahlen, für immer nutzen. Kein Abonnement, keine versteckten Gebühren. Lebenslange Updates inklusive.',
+
+      // Odoo AI CTA
+      'odoo_cta_title': 'Bereit, Ihren Produktkatalog zu Transformieren?',
+      'odoo_cta_description': 'Schließen Sie sich Hunderten von Odoo-Benutzern an, die jede Woche Stunden sparen.',
+      'odoo_cta_button': 'Jetzt bei Odoo Apps Holen',
+      'odoo_cta_guarantee': '30 Tage Geld-zurück-Garantie • Kompatibel: Odoo 17, 18, 19',
+
       // Footer
       'footer_company': 'Unternehmen',
       'footer_about_us': 'Über Uns',

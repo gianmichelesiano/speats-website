@@ -646,13 +646,193 @@ nav {
     .brokerai-features {
         grid-template-columns: 1fr;
     }
-    
+
     .benefits-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .feature-card, .benefit-card {
         padding: 20px;
+    }
+}
+
+/* Odoo AI Section */
+.odoo-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8eef4 100%);
+}
+
+.odoo-hero {
+    margin: 40px 0 60px;
+}
+
+.odoo-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.odoo-stat-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(15, 76, 129, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.odoo-stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(15, 76, 129, 0.2);
+}
+
+.odoo-stat-item h3 {
+    font-size: 48px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.odoo-stat-item p {
+    color: var(--gray);
+    font-size: var(--body-size);
+    font-weight: 500;
+}
+
+.odoo-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.odoo-screenshots {
+    margin: 80px 0;
+}
+
+.odoo-screenshots h3 {
+    text-align: center;
+    font-size: var(--h2-size);
+    color: var(--primary-dark);
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.screenshot-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.screenshot-item {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.screenshot-item h4 {
+    font-size: var(--h3-size);
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.screenshot-item p {
+    color: var(--gray);
+    margin-bottom: 20px;
+    font-size: var(--body-size);
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.screenshot-item img:hover {
+    transform: scale(1.02);
+}
+
+.odoo-benefits {
+    margin: 80px 0;
+}
+
+.odoo-benefits h3 {
+    text-align: center;
+    font-size: var(--h2-size);
+    color: var(--primary-dark);
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.odoo-cta {
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 60px 40px;
+    border-radius: 15px;
+    margin-top: 60px;
+    box-shadow: 0 10px 40px rgba(15, 76, 129, 0.3);
+}
+
+.odoo-cta h3 {
+    font-size: var(--h2-size);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.odoo-cta p {
+    font-size: var(--body-size);
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.odoo-cta .btn {
+    background-color: white;
+    color: var(--primary);
+    font-weight: 600;
+    padding: 15px 40px;
+    font-size: var(--body-size);
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.odoo-cta .btn:hover {
+    background-color: var(--light);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsive for Odoo section */
+@media (max-width: 768px) {
+    .odoo-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .odoo-features {
+        grid-template-columns: 1fr;
+    }
+
+    .screenshot-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .odoo-stat-item h3 {
+        font-size: 36px;
+    }
+
+    .odoo-cta {
+        padding: 40px 20px;
     }
 }
 

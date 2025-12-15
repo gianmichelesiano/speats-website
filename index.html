@@ -68,6 +68,7 @@
                     <ul class="nav-links">
                         <li><a href="#home" onclick="closeMenu()" data-i18n="nav_home">Home</a></li>
                         <li><a href="#services" onclick="closeMenu()" data-i18n="nav_services">Services</a></li>
+                        <li><a href="#odoo-ai" onclick="closeMenu()" data-i18n="nav_odoo_ai">Odoo AI</a></li>
                         <li><a href="#brokerai" onclick="closeMenu()" data-i18n="nav_brokerai">BrokerAI</a></li>
                         <li><a href="#about" onclick="closeMenu()" data-i18n="nav_about">About</a></li>
                         <li><a href="#contact" onclick="closeMenu()" data-i18n="nav_contact">Contact</a></li>
@@ -184,7 +185,137 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- Odoo AI Product Section -->
+    <section class="section odoo-section" id="odoo-ai">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="odoo_ai_title">AI Product Description Generator for Odoo</h2>
+                <p data-i18n="odoo_ai_subtitle">Transform your product catalog in minutes with professional AI-generated descriptions. Save 97% of your time!</p>
+            </div>
+
+            <div class="odoo-hero">
+                <div class="odoo-stats">
+                    <div class="odoo-stat-item">
+                        <h3>97%</h3>
+                        <p data-i18n="odoo_stat_time_saved">Time Saved</p>
+                    </div>
+                    <div class="odoo-stat-item">
+                        <h3>3s</h3>
+                        <p data-i18n="odoo_stat_generation_time">Generation Time</p>
+                    </div>
+                    <div class="odoo-stat-item">
+                        <h3>€29</h3>
+                        <p data-i18n="odoo_stat_price">One-Time Price</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="odoo-features">
+                <div class="feature-card">
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 data-i18n="odoo_feature_oneclick_title">One-Click Generation</h3>
+                    <p data-i18n="odoo_feature_oneclick_description">Open any product, click "Generate with AI", and get a professional description in 3 seconds. It's that simple.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3 data-i18n="odoo_feature_templates_title">3 Smart Templates</h3>
+                    <p data-i18n="odoo_feature_templates_description">Choose Brief (50 words), Standard (100 words), or Detailed (200 words). Perfect for any use case.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="service-icon"><i class="fas fa-edit"></i></div>
+                    <h3 data-i18n="odoo_feature_edit_title">Edit Before Saving</h3>
+                    <p data-i18n="odoo_feature_edit_description">Preview and modify the generated description before applying. Full control, zero waste.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3 data-i18n="odoo_feature_regenerate_title">Regenerate Anytime</h3>
+                    <p data-i18n="odoo_feature_regenerate_description">Not happy? Click "Regenerate" for a fresh version. Different words, same quality.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="service-icon"><i class="fas fa-lock"></i></div>
+                    <h3 data-i18n="odoo_feature_secure_title">Secure Configuration</h3>
+                    <p data-i18n="odoo_feature_secure_description">Your OpenAI API key is stored encrypted. Test connection with one click.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-i18n="odoo_feature_error_title">Smart Error Handling</h3>
+                    <p data-i18n="odoo_feature_error_description">Clear error messages with troubleshooting steps. Never stuck, always supported.</p>
+                </div>
+            </div>
+
+            <div class="odoo-screenshots">
+                <h3 data-i18n="odoo_screenshots_title">See It in Action</h3>
+                <div class="screenshot-showcase">
+                    <div class="screenshot-item">
+                        <h4 data-i18n="odoo_screenshot_1_title">Generate with One Click</h4>
+                        <p data-i18n="odoo_screenshot_1_description">Open any product and click "Generate AI Description". The wizard opens instantly.</p>
+                        <picture>
+                            <img src="assets/main_screenshot.png" alt="AI Generation Wizard Screenshot" loading="lazy">
+                        </picture>
+                    </div>
+
+                    <div class="screenshot-item">
+                        <h4 data-i18n="odoo_screenshot_2_title">Smart Button in Product Form</h4>
+                        <p data-i18n="odoo_screenshot_2_description">The "Generate AI Description" button is integrated directly in your product form.</p>
+                        <picture>
+                            <img src="assets/smart_button_screenshot.png" alt="Smart Button in Product Form Screenshot" loading="lazy">
+                        </picture>
+                    </div>
+
+                    <div class="screenshot-item">
+                        <h4 data-i18n="odoo_screenshot_3_title">Easy Configuration</h4>
+                        <p data-i18n="odoo_screenshot_3_description">Add your OpenAI API key, test the connection, and you're ready to go!</p>
+                        <picture>
+                            <img src="assets/config_screenshot.png" alt="Configuration Settings Screenshot" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <div class="odoo-benefits">
+                <h3 data-i18n="odoo_benefits_title">Why Choose Our Solution?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-clock"></i></div>
+                        <h4 data-i18n="odoo_benefit_time_title">Save Hours of Work</h4>
+                        <p data-i18n="odoo_benefit_time_description">200 products = 30 minutes instead of 50 hours. Automatic comparisons and batch processing.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
+                        <h4 data-i18n="odoo_benefit_quality_title">Consistent Quality</h4>
+                        <p data-i18n="odoo_benefit_quality_description">SEO-optimized descriptions with standardized format across all products.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-dollar-sign"></i></div>
+                        <h4 data-i18n="odoo_benefit_cost_title">Minimal Costs</h4>
+                        <p data-i18n="odoo_benefit_cost_description">€29 one-time + ~€0.02 per description. 100 products ≈ €2 API cost.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-infinity"></i></div>
+                        <h4 data-i18n="odoo_benefit_unlimited_title">Unlimited Use</h4>
+                        <p data-i18n="odoo_benefit_unlimited_description">Pay once, use forever. No subscriptions, no hidden fees. Lifetime updates included.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="odoo-cta">
+                <h3 data-i18n="odoo_cta_title">Ready to Transform Your Product Catalog?</h3>
+                <p data-i18n="odoo_cta_description">Join hundreds of Odoo users saving hours every week.</p>
+                <a href="https://apps.odoo.com" target="_blank" class="btn" data-i18n="odoo_cta_button">Get It Now on Odoo Apps</a>
+                <p style="margin-top: 20px; font-size: 0.9em; color: var(--gray);" data-i18n="odoo_cta_guarantee">30-day money-back guarantee • Compatible: Odoo 17, 18, 19</p>
+            </div>
+        </div>
+    </section>
+
     <!-- BrokerAI Product Section -->
     <section class="section brokerai-section" id="brokerai">
         <div class="container">
