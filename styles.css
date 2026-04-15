@@ -931,7 +931,7 @@ nav {
 
 .odoo-cta .btn {
     background-color: white;
-    color: var(--primary);
+    color: #1a1a2e;
     font-weight: 600;
     padding: 15px 40px;
     font-size: var(--body-size);

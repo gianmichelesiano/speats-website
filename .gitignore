@@ -1,2 +1,7 @@
 z_notes.txt
 .vercel
+.DS_Store
+CLAUDE.md
+nginx.conf
+local/
+.github/
