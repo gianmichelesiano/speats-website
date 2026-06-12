@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharma-Plan — Apotheken-Dienstplanung | Speats AI</title>
+<meta name="description" content="Pharma-Plan automatisiert Schichtplanung, Absenzen, Stellvertretungen und Impfungen für Schweizer Apotheken. 250 CHF/Monat. 30 Tage gratis testen.">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #6366f1; --primary-dark: #4f46e5; --primary-glow: rgba(99,102,241,0.3);
+  --secondary: #a855f7; --bg-dark: #030014; --bg-card: rgba(255,255,255,0.03);
+  --bg-card-hover: rgba(255,255,255,0.08); --text-main: #ffffff; --text-muted: #94a3b8;
+  --border-light: rgba(255,255,255,0.1); --success: #22c55e;
+  --gradient-main: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --gradient-glow: radial-gradient(circle at center, rgba(99,102,241,0.15) 0%, rgba(3,0,20,0) 70%);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+html { scroll-behavior: smooth; background: var(--bg-dark); }
+body { background: var(--bg-dark); color: var(--text-main); line-height: 1.6; background-image: var(--gradient-glow); background-attachment: fixed; min-height: 100vh; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+nav { padding: 20px 0; border-bottom: 1px solid var(--border-light); background: rgba(3,0,20,.85); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; }
+nav .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--text-main); display: flex; align-items: center; gap: 8px; }
+.logo-speats { color: var(--text-main); }
+.logo-ai { background: var(--gradient-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a { color: var(--text-muted); text-decoration: none; font-size: .95rem; }
+.nav-links a:hover { color: var(--text-main); }
+.btn { display: inline-block; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: .95rem; text-decoration: none; transition: all .2s; cursor: pointer; border: none; font-family: inherit; }
+.btn-primary { background: var(--gradient-main); color: #fff; box-shadow: 0 0 20px var(--primary-glow); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(99,102,241,.4); }
+.btn-outline { background: transparent; color: var(--text-main); border: 1px solid var(--border-light); }
+.btn-outline:hover { border-color: var(--primary); }
+.hero { padding: 100px 0 80px; text-align: center; }
+.hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; line-height: 1.15; margin-bottom: 20px; }
+.hero h1 span { background: var(--gradient-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 36px; }
+.hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.hero-stats { display: flex; gap: 60px; justify-content: center; margin-top: 60px; flex-wrap: wrap; }
+.stat { text-align: center; }
+.stat-number { font-size: 2.5rem; font-weight: 800; background: var(--gradient-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.stat-label { color: var(--text-muted); font-size: .9rem; margin-top: 4px; }
+section { padding: 80px 0; }
+.section-title { text-align: center; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 12px; }
+.section-subtitle { text-align: center; color: var(--text-muted); font-size: 1.05rem; max-width: 600px; margin: 0 auto 50px; }
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.feature-card { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 16px; padding: 32px; backdrop-filter: blur(10px); transition: all .3s; }
+.feature-card:hover { background: var(--bg-card-hover); border-color: var(--primary); transform: translateY(-3px); }
+.feature-card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; }
+.feature-card p { color: var(--text-muted); font-size: .95rem; }
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 700px; margin: 0 auto; }
+.pricing-card { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 16px; padding: 40px 32px; text-align: center; position: relative; backdrop-filter: blur(10px); }
+.pricing-card.featured { border-color: var(--primary); box-shadow: 0 0 30px var(--primary-glow); }
+.pricing-card.featured::before { content: "Beliebteste Option"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--gradient-main); color: #fff; font-size: .8rem; font-weight: 700; padding: 4px 16px; border-radius: 20px; }
+.pricing-card .price { font-size: 3rem; font-weight: 800; margin: 20px 0 8px; }
+.pricing-card .price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; }
+.pricing-card .desc { color: var(--text-muted); font-size: .95rem; margin-bottom: 24px; }
+.pricing-card ul { list-style: none; text-align: left; margin-bottom: 28px; }
+.pricing-card ul li { padding: 8px 0; color: var(--text-muted); font-size: .9rem; }
+.pricing-card ul li::before { content: "✓ "; color: var(--success); font-weight: 700; }
+.testimonial { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 16px; padding: 40px; max-width: 700px; margin: 0 auto; text-align: center; backdrop-filter: blur(10px); }
+.testimonial p { font-size: 1.1rem; font-style: italic; color: var(--text-main); margin-bottom: 16px; }
+.testimonial .author { background: var(--gradient-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; }
+.testimonial .role { color: var(--text-muted); font-size: .85rem; margin-top: 4px; }
+.cta { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 24px; padding: 60px; text-align: center; margin: 40px auto; backdrop-filter: blur(10px); max-width: 800px; }
+.cta h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 12px; }
+.cta p { color: var(--text-muted); margin-bottom: 28px; font-size: 1.05rem; }
+.cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+footer { border-top: 1px solid var(--border-light); padding: 32px 0; text-align: center; color: var(--text-muted); font-size: .85rem; }
+footer a { color: var(--primary); text-decoration: none; }
+.lang-switch { display: flex; gap: 8px; justify-content: center; margin-bottom: 40px; }
+.lang-switch a { color: var(--text-muted); text-decoration: none; padding: 4px 12px; border-radius: 6px; font-size: .9rem; border: 1px solid transparent; }
+.lang-switch a:hover, .lang-switch a.active { border-color: var(--primary); color: var(--text-main); }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  nav .container { flex-direction: column; gap: 16px; }
+  .nav-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .cta { padding: 32px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="/" class="logo"><span class="logo-speats">Speats</span><span class="logo-ai"> AI</span> <span style="color:var(--text-muted);font-weight:400;font-size:1rem;">/</span> 💊 <span style="font-weight:400;">Pharma-Plan</span></a>
+    <div class="nav-links">
+      <a href="#features">Funktionen</a>
+      <a href="#pricing">Preise</a>
+      <a href="#kontakt" class="btn btn-primary">Demo anfragen</a>
+    </div>
+  </div>
+</nav>
+
+<div class="lang-switch container" style="margin-top:24px;">
+  <a href="pharma-plan.html">🇮🇹 IT</a>
+  <a href="pharma-plan-de.html" class="active">🇩🇪 DE</a>
+  <a href="pharma-plan-fr.html">🇫🇷 FR</a>
+  <a href="pharma-plan-en.html">🇬🇧 EN</a>
+</div>
+
+<section class="hero">
+  <div class="container">
+    <h1>Apotheken-Dienstplanung<br><span>für die Schweiz</span></h1>
+    <p>Pharma-Plan automatisiert Schichtplanung, Absenzen, Stellvertretungen und Impfungen – entwickelt für Schweizer Apotheken. Von Speats AI.</p>
+    <div class="hero-btns">
+      <a href="#kontakt" class="btn btn-primary">🎯 Kostenlose Demo anfordern</a>
+      <a href="#features" class="btn btn-outline">Mehr erfahren</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-number">4x</div><div class="stat-label">Weniger Zeit für Planung</div></div>
+      <div class="stat"><div class="stat-number">100%</div><div class="stat-label">Deckung jederzeit</div></div>
+      <div class="stat"><div class="stat-number">250</div><div class="stat-label">CHF/Monat · 30 Tage gratis</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <h2 class="section-title">Alles für Ihre Apotheke</h2>
+    <p class="section-subtitle">Von der Wochenplanung bis zu Stellvertretungen, Impfungen und Weiterbildung.</p>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feature-icon">📅</div><h3>Schichtplanung</h3><p>Wochenpläne mit wenigen Klicks. Teilzeit, Vollzeit und Wochenenden mit wiederkehrenden Mustern.</p></div>
+      <div class="feature-card"><div class="feature-icon">🏖️</div><h3>Absenzen & Ferien</h3><p>Urlaub, Krankheit, Abwesenheiten. Automatische Berechnung der nötigen Deckung.</p></div>
+      <div class="feature-card"><div class="feature-icon">🔄</div><h3>Stellvertretung</h3><p>Ersatzanfragen zwischen Apotheken. Automatische Benachrichtigung verfügbarer Mitarbeiter.</p></div>
+      <div class="feature-card"><div class="feature-icon">💉</div><h3>Impfungen & Triage</h3><p>Impfkampagnen und Kundentriage. Berichte für Gesundheitsbehörden.</p></div>
+      <div class="feature-card"><div class="feature-icon">🎓</div><h3>FPH-Weiterbildung</h3><p>Weiterbildungsstunden und FPH-Prüfungsvorbereitung. Personalisierter Lernplan.</p></div>
+      <div class="feature-card"><div class="feature-icon">🇩🇪🇫🇷🇮🇹</div><h3>DE · FR · IT · EN</h3><p>Mehrsprachige Oberfläche. Schweizer Kantonsfeiertage inklusive.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" style="background: var(--bg-card); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+  <div class="container">
+    <h2 class="section-title">Transparente Preise</h2>
+    <p class="section-subtitle">30 Tage kostenlos testen. Keine Kreditkarte, keine Verpflichtung.</p>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Einzelapotheke</h3>
+        <div class="price">250<span> CHF/Monat</span></div>
+        <div class="desc">Für eine unabhängige Apotheke</div>
+        <ul>
+          <li>Unbegrenzte Schichtplanung</li>
+          <li>Absenzen- und Ferienverwaltung</li>
+          <li>Automatische Stellvertretung</li>
+          <li>Impf- und Triage-Modul</li>
+          <li>E-Mail-Support auf Deutsch</li>
+          <li>30 Tage kostenlose Testphase</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-primary" style="width:100%;">Kostenlos testen</a>
+      </div>
+      <div class="pricing-card featured">
+        <h3>Apothekengruppe</h3>
+        <div class="price">500<span> CHF/Monat</span></div>
+        <div class="desc">Bis zu 5 Apotheken</div>
+        <ul>
+          <li>Alles aus dem Einzelplan</li>
+          <li>Stellvertretung innerhalb der Gruppe</li>
+          <li>Zentrales Dashboard</li>
+          <li>Konsolidierte Berichte</li>
+          <li>Prioritäts-Support</li>
+          <li>API für Warenwirtschaft</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-primary" style="width:100%;">Kostenlos testen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="testimonial">
+      <p>"Endlich eine Planungssoftware für Schweizer Apotheken. Wir sparen Stunden pro Woche und die automatische Stellvertretung hat uns schon mehrfach gerettet."</p>
+      <div class="author">— TPZ, Top Pharm Zentrum</div>
+      <div class="role">Seit 1 Monat in Betrieb</div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="container">
+  <div class="cta">
+    <h2>Bereit für eine einfachere Planung?</h2>
+    <p>Testen Sie Pharma-Plan 30 Tage kostenlos. Wir helfen Ihnen in 30 Minuten bei der Einrichtung.</p>
+    <div class="cta-btns">
+      <a href="mailto:gianmichele.siano@gmail.com?subject=Demo-Anfrage%20Pharma-Plan" class="btn btn-primary">📧 Demo anfordern</a>
+      <a href="https://pharma-plan.staging.speats.ch/" class="btn btn-outline" target="_blank">👀 Live-App ansehen</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 <a href="/">Speats AI</a> · Zürich, Schweiz · <a href="mailto:gianmichele.siano@gmail.com">Kontakt</a> · <a href="/">speats.ch</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
